@@ -1,0 +1,73 @@
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 12px;
+  width: 100vw;
+  height: 100vh;
+}
+.btn {
+  padding: 20px;
+  width: 50px;
+  max-height: 20px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  img {
+    padding-right: 15px;
+  }
+  &:hover {
+    cursor: pointer;
+    display: inline;
+    width: 200px;
+  }
+  &:hover::after {
+    text-decoration: underline;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+.btn__container--blog {
+  background: #e17b77;
+
+  &:hover::after {
+    content: "Check out my blog";
+  }
+}
+
+.btn__container--twitter {
+  background: #00aced;
+
+  &:hover::after {
+    content: "Follow me on Twitter";
+  }
+}
+
+.btn__container--linkedin {
+  background: #007bb6;
+
+  &:hover::after {
+    content: "Connect on Linkedin";
+  }
+}
+
+.btn__container--facebook {
+  background: #3b5998;
+
+  &:hover::after {
+    content: "Like my Facebook page";
+  }
+}
+
+.btn__container--github {
+  background: #333;
+
+  &:hover::after {
+    content: "See my projects on Github";
+  }
+}
